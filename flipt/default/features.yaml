@@ -7,3 +7,7 @@ flags:
       name: testflag
       type: BOOLEAN_FLAG_TYPE
       enabled: false
+segments:
+    - key: internal-users
+      name: internal users
+      match_type: ALL_MATCH_TYPE
