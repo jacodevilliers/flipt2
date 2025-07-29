@@ -7,6 +7,12 @@ flags:
       name: testflag
       type: BOOLEAN_FLAG_TYPE
       enabled: false
+      rollouts:
+        - segment:
+            keys:
+                - internal-users
+            operator: OR_SEGMENT_OPERATOR
+            value: true
 segments:
     - key: internal-users
       name: internal users
