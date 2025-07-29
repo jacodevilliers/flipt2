@@ -10,4 +10,9 @@ flags:
 segments:
     - key: internal-users
       name: internal users
+      constraints:
+        - type: STRING_COMPARISON_TYPE
+          property: userId
+          operator: isoneof
+          value: '["1","45314"]'
       match_type: ALL_MATCH_TYPE
